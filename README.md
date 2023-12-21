@@ -1,83 +1,21 @@
-<<<<<<< HEAD
-# Homework 8.01: MongoDB, RabbitMQ, and Redis
+# Homework SCRAPY #9 
 
-## Introduction
+## Task Description
+Choose either BeautifulSoup library or the Scrapy framework. Your task is to perform web scraping on the http://quotes.toscrape.com website. The goal is to obtain two files: quotes.json, where you will store all information about the quotes from all pages of the website, and authors.json, where information about the authors of the specified quotes will be located. The structure of the JSON files should match the one from the previous homework assignment. Execute the previously written scripts to load the JSON files into a cloud-based database.
 
-# Homework 8.01: MongoDB, RabbitMQ, and Redis
-
-## Introduction
-
-This project focuses on integrating MongoDB Atlas for cloud-based data storage, RabbitMQ for message queuing, and Redis for caching. The task is divided into two main parts:
-
-...
-
-### Installation and Dependencies
-
-Before running the scripts, ensure you have the following components installed and configured:
-
-#### MongoDB Atlas
-
-1. Set up a cloud-based MongoDB instance on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
-2. Obtain the connection details.
-
-#### RabbitMQ
-
-1. Install RabbitMQ locally or set it up on a server. Refer to the [official installation guide](https://www.rabbitmq.com/download.html).
-2. Configure RabbitMQ credentials.
-
-#### Redis
-
-1. Install and configure Redis locally. Follow the instructions [here](https://redis.io/download).
-
-#### Python Packages
-
-Install the required Python packages using the following command:
-
-```bash
-pip install -r requirements.txt
-```
+### Additional Task
+Use the Scrapy framework for web scraping. Run the crawler as a single script main.py.
 
 ## Usage
+Install the required packages:
 
-1. **Start MongoDB and RabbitMQ services.**
+``` bash
+pip install scrapy
+```
+Run the Scrapy spider:
 
-2. **Run the data loading scripts for MongoDB:**
-
-    ```bash
-    python load_mongo.py
-    ```
-
-3. **Run the search script for MongoDB:**
-
-    ```bash
-    python search_quotes.py
-    ```
-
-4. **Run the producer script for RabbitMQ:**
-
-    ```bash
-    python producer.py
-    ```
-
-5. **Run the consumer script for RabbitMQ:**
-
-    ```bash
-    python consumer.py
-    ```
-
-...
-
-## Additional Features (Optional)
-
-### Shortened Commands
-
-In the search script, you can use shortened commands for user convenience:
-
-- `name:st` for `name:Steve Martin`
-- `tag:li` for `tag:life`
-
-### Caching with Redis
-
-To enable caching of search results using Redis, uncomment the relevant sections in the search script (`search_quotes.py`). Ensure that Redis is running before executing the script.
-
+``` bash
+python main.py
+```
+Ensure that the structure of the JSON files (quotes.json and authors.json) aligns with the requirements from the previous homework assignment.
 
