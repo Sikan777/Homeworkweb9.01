@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "homeworkweb9"
+version = "0.1.0"
+description = ""
+authors = ["Sikan777 <sikanbog@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pika = "^1.3.2"
+scrapy = "^2.11.0"
+itemadapter = "^0.8.0"
+mongoengine = "^0.27.0"
+faker = "^21.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
